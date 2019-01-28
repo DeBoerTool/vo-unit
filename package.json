@@ -1,6 +1,6 @@
 {
   "name": "@deboertool/vo-unit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A value object for a unit such as inches",
   "main": "index.js",
   "scripts": {
