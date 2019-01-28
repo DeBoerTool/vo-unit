@@ -1,0 +1,1 @@
+A value object for a unit, such as inches. Includes a factory for easy instantiation.
