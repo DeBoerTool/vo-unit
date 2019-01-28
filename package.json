@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DeBoerTool/vo-unit/issues"
   },
-  "homepage": "https://github.com/DeBoerTool/vo-unit#readme"
+  "homepage": "https://github.com/DeBoerTool/vo-unit#readme",
+  "dependencies": {
+    "@deboertool/value-object-interface": "0.0.2"
+  }
 }
