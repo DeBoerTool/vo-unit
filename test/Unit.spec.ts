@@ -1,4 +1,4 @@
-import Unit from '../src/Unit'
+import { Unit } from '../'
 import { expect } from 'chai'
 
 const vo = new Unit('te', 'test', '_')

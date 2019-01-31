@@ -1,5 +1,4 @@
-import Factory from '../src/Factory'
-import Unit from '../src/Unit'
+import { Factory, Unit } from '../'
 import { expect } from 'chai'
 
 const defaultVo = new Factory().make('in')
