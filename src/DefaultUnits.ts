@@ -1,6 +1,6 @@
-import UnitDefinition from './Interfaces/UnitDefinition'
+import IUnitDefinition from './Interfaces/IUnitDefinition'
 
-const defaultUnits: UnitDefinition[] = [
+const defaultUnits: IUnitDefinition[] = [
   { name: 'metric', code: 'mm', symbol: 'mm' },
   { name: 'imperal', code: 'in', symbol: '"' },
   { name: 'degrees', code: 'deg', symbol: '°' },

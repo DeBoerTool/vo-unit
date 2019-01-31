@@ -1,9 +1,10 @@
 import ValueObject from '@deboertool/value-object-interface'
 
-export default interface Unit extends ValueObject<string> {
+export default interface IUnit extends ValueObject<string> 
+{
   code (): string
   name (): string
   symbol (): string
   isCode (code: string): boolean
-  toString ()
+  toString (): string
 }

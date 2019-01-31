@@ -1,29 +1,36 @@
-import UnitInterface from './Interfaces/Unit'
+import IUnit from './Interfaces/IUnit'
 
-export default class Unit implements UnitInterface {
+export default class Unit implements IUnit 
+{
   constructor (private _code: string, private _name: string, private _symbol: string) {}
 
-  code (): string {
+  code (): string 
+  {
     return this._code
   }
 
-  name (): string {
+  name (): string 
+  {
     return this._name
   }
 
-  symbol (): string {
+  symbol (): string 
+  {
     return this._symbol
   }
 
-  isCode (code: string): boolean {
+  isCode (code: string): boolean 
+  {
     return this._code === code
   }
 
-  toString (): string {
+  toString (): string 
+  {
     return this._symbol
   }
 
-  value (): string {
+  value (): string 
+  {
     return this.toString()
   }
 }

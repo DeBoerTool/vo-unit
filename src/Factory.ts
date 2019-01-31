@@ -1,23 +1,26 @@
-import FactoryInterface from './Interfaces/Factory'
+import IUnitFactory from './Interfaces/IUnitFactory'
+import IUnit from './Interfaces/IUnit'
+import IUnitDefinition from './Interfaces/IUnitDefinition'
 import DefaultUnits from './DefaultUnits'
-import UnitInterface from './Interfaces/Unit'
 import Unit from './Unit'
-import UnitDefinition from './Interfaces/UnitDefinition'
 
-export default class Factory implements FactoryInterface {
-  private definitions
+export default class Factory implements IUnitFactory 
+{
+  private definitions: IUnitDefinition[]
   
-  constructor (definitions?: UnitDefinition[]) {
+  constructor (definitions?: IUnitDefinition[]) 
+  {
     this.definitions = definitions || DefaultUnits
   }
 
-  make (code: string): UnitInterface {
-    const def: UnitDefinition = this.definitions.find(def => def.code === code)
+  make (code: string): IUnit 
+  {
+    const def: IUnitDefinition = this.definitions.find(def => def.code === code)
 
     if (!def) {
       throw new Error(`No Unit definition for code "${code}" was found.`)
     }
   
-    return new Unit(def.code, def.name, def.code)
+    return new Unit(def.code, def.name, def.symbol)
   }
 }
