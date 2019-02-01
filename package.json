@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/DeBoerTool/vo-unit#readme",
   "dependencies": {
-    "@deboertool/value-object-interface": "0.0.2"
+    "@deboertool/value-object-interface": "^0.3.4"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",

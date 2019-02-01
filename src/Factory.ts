@@ -15,7 +15,7 @@ export default class Factory implements IUnitFactory
 
   make (code: string): IUnit 
   {
-    const def: IUnitDefinition = this.definitions.find(def => def.code === code)
+    const def = this.definitions.find(def => def.code === code) 
 
     if (!def) {
       throw new Error(`No Unit definition for code "${code}" was found.`)
